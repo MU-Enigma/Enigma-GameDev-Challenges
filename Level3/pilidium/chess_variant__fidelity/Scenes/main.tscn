@@ -1,0 +1,558 @@
+[gd_scene load_steps=106 format=3 uid="uid://dqs1bindj4w7v"]
+
+[ext_resource type="Script" path="res://Scenes/main.gd" id="1_3o8aa"]
+[ext_resource type="Texture2D" uid="uid://dop5pef5ik5tk" path="res://Assets/chess-knight-white.png" id="1_mfcsw"]
+[ext_resource type="PackedScene" uid="uid://u1rv75bk7t5h" path="res://Scenes/board.tscn" id="1_qat64"]
+[ext_resource type="Texture2D" uid="uid://bfk0bgmwfyfox" path="res://Assets/earth.jpg" id="1_v8uat"]
+[ext_resource type="Texture2D" uid="uid://cj75oispqhj6d" path="res://Assets/chess-bishop-white.png" id="2_sfxcb"]
+[ext_resource type="Texture2D" uid="uid://bsd7k3dwlxv4r" path="res://Assets/button_back.png" id="3_a87rf"]
+[ext_resource type="Texture2D" uid="uid://bdpehrc6t24hd" path="res://Assets/chess-rook-white.png" id="3_tekfy"]
+[ext_resource type="Texture2D" uid="uid://djyn5y6eymqcq" path="res://Assets/chess-queen-white.png" id="4_wmvs0"]
+[ext_resource type="Texture2D" uid="uid://bkwi10a81wafc" path="res://Assets/chess-knight-black.png" id="5_4pkrd"]
+[ext_resource type="Texture2D" uid="uid://hve8lx0wthqe" path="res://Assets/chess-bishop-black.png" id="6_r6noe"]
+[ext_resource type="Texture2D" uid="uid://bikqb3cxb8noe" path="res://Assets/chess-rook-black.png" id="7_43tt1"]
+[ext_resource type="Texture2D" uid="uid://dpq3sk0l0825r" path="res://Assets/chess-queen-black.png" id="8_h71b2"]
+[ext_resource type="Texture2D" uid="uid://d3faovgsvlaso" path="res://Assets/checkmate.png" id="11_xl08j"]
+[ext_resource type="Texture2D" uid="uid://va5qia1pbyhh" path="res://Assets/stalemate.png" id="13_6rn2h"]
+[ext_resource type="Texture2D" uid="uid://bej0i68s6gjc5" path="res://Assets/draw.png" id="14_mclvt"]
+[ext_resource type="Texture2D" uid="uid://dr6epyqufkygb" path="res://Assets/black_wins.png" id="15_6iai1"]
+[ext_resource type="Texture2D" uid="uid://dnnp06iemj232" path="res://Assets/white_wins.png" id="16_y8e3r"]
+[ext_resource type="Texture2D" uid="uid://bpgk6plv55e42" path="res://Assets/go_to_main_menu_green.png" id="17_8wp1a"]
+[ext_resource type="Texture2D" uid="uid://cct4ccwd4quq4" path="res://Assets/go_to_main_menu.png" id="17_gw54x"]
+[ext_resource type="Texture2D" uid="uid://m6wpsh7idjb3" path="res://Assets/banner.png" id="19_bm4nn"]
+[ext_resource type="Texture2D" uid="uid://8m33exfmm631" path="res://Assets/check_pop_up.png" id="20_ywtmw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8hk00"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2intx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x0idv"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_rfvh6"]
+texture = ExtResource("1_mfcsw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c0xe4"]
+texture = ExtResource("1_mfcsw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ps1k8"]
+texture = ExtResource("1_mfcsw")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o6txe"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f0bbk"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h86l7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nwv6j"]
+texture = ExtResource("2_sfxcb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uh6tw"]
+texture = ExtResource("2_sfxcb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_a1x2i"]
+texture = ExtResource("2_sfxcb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_do75r"]
+texture = ExtResource("2_sfxcb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uvsp0"]
+texture = ExtResource("2_sfxcb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_oq6pw"]
+texture = ExtResource("2_sfxcb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b1ofm"]
+texture = ExtResource("2_sfxcb")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_bn08t"]
+texture = ExtResource("2_sfxcb")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_14o4d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n2vup"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_oyhd8"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uccbo"]
+texture = ExtResource("3_tekfy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_sptv2"]
+texture = ExtResource("3_tekfy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_6i1vc"]
+texture = ExtResource("3_tekfy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kuug8"]
+texture = ExtResource("3_tekfy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_j44ph"]
+texture = ExtResource("3_tekfy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_mi85p"]
+texture = ExtResource("3_tekfy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5vw0x"]
+texture = ExtResource("3_tekfy")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_85gpl"]
+texture = ExtResource("3_tekfy")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_32e05"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wt48f"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2bsw7"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7eq30"]
+texture = ExtResource("4_wmvs0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tqmja"]
+texture = ExtResource("4_wmvs0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hyri8"]
+texture = ExtResource("4_wmvs0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_12t8c"]
+texture = ExtResource("4_wmvs0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tkcfv"]
+texture = ExtResource("4_wmvs0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lh2rb"]
+texture = ExtResource("4_wmvs0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hpy1f"]
+texture = ExtResource("4_wmvs0")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_pbw2a"]
+texture = ExtResource("4_wmvs0")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_flwri"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_shbkn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pyod4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3pp8s"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_u8u4w"]
+texture = ExtResource("1_mfcsw")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_is6w3"]
+texture = ExtResource("5_4pkrd")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_abbch"]
+texture = ExtResource("5_4pkrd")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_m60r1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dkem8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_88v5k"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_0sfxf"]
+texture = ExtResource("6_r6noe")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vindq"]
+texture = ExtResource("6_r6noe")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_httvw"]
+texture = ExtResource("6_r6noe")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r4r4t"]
+texture = ExtResource("6_r6noe")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kuita"]
+texture = ExtResource("6_r6noe")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_llks7"]
+texture = ExtResource("6_r6noe")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_twbst"]
+texture = ExtResource("6_r6noe")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7jk56"]
+texture = ExtResource("6_r6noe")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4okpu"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_d843n"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_n235h"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ulpdg"]
+texture = ExtResource("7_43tt1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_84s46"]
+texture = ExtResource("7_43tt1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x6mm3"]
+texture = ExtResource("7_43tt1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_jc1v0"]
+texture = ExtResource("7_43tt1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hxjs8"]
+texture = ExtResource("7_43tt1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_gikfi"]
+texture = ExtResource("7_43tt1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_cf5im"]
+texture = ExtResource("7_43tt1")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_uw6ck"]
+texture = ExtResource("7_43tt1")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_c2181"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6rhp1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hp2nu"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_o5vco"]
+texture = ExtResource("8_h71b2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5e6n3"]
+texture = ExtResource("8_h71b2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_v4uqr"]
+texture = ExtResource("8_h71b2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_wr3pu"]
+texture = ExtResource("8_h71b2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_b5nla"]
+texture = ExtResource("8_h71b2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_r3kux"]
+texture = ExtResource("8_h71b2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_hlu30"]
+texture = ExtResource("8_h71b2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_p4daj"]
+texture = ExtResource("8_h71b2")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6de2u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wamfc"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_tmbjf"]
+texture = ExtResource("17_8wp1a")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_3uha3"]
+texture = ExtResource("17_8wp1a")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_24kya"]
+texture = ExtResource("17_gw54x")
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_3o8aa")
+
+[node name="Earth" type="Sprite2D" parent="."]
+z_index = -10
+position = Vector2(1000, -1000)
+scale = Vector2(5, 5)
+texture = ExtResource("1_v8uat")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(1000, -1000)
+ignore_rotation = false
+zoom = Vector2(0.25, 0.25)
+
+[node name="Board" parent="." instance=ExtResource("1_qat64")]
+
+[node name="PromotionLayer" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+
+[node name="white_pieces" type="Control" parent="PromotionLayer"]
+visible = false
+layout_mode = 3
+anchor_left = 0.868
+anchor_top = -1.543
+anchor_right = 0.868
+anchor_bottom = -1.543
+offset_left = -1000.0
+offset_top = -250.136
+offset_right = 1000.06
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="2" type="Button" parent="PromotionLayer/white_pieces" groups=["white_pieces"]]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 50.0
+offset_right = 460.0
+offset_bottom = 450.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_8hk00")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_2intx")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_x0idv")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_rfvh6")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_rfvh6")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_rfvh6")
+theme_override_styles/hover = SubResource("StyleBoxTexture_rfvh6")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_rfvh6")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_c0xe4")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_rfvh6")
+theme_override_styles/normal = SubResource("StyleBoxTexture_ps1k8")
+
+[node name="button_back" type="Sprite2D" parent="PromotionLayer/white_pieces/2"]
+z_index = -1
+position = Vector2(-60, -50)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("3_a87rf")
+centered = false
+
+[node name="3" type="Button" parent="PromotionLayer/white_pieces" groups=["white_pieces"]]
+layout_mode = 0
+offset_left = 560.0
+offset_top = 50.0
+offset_right = 960.0
+offset_bottom = 450.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o6txe")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_f0bbk")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_h86l7")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_nwv6j")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_uh6tw")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_a1x2i")
+theme_override_styles/hover = SubResource("StyleBoxTexture_do75r")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_uvsp0")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_oq6pw")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_b1ofm")
+theme_override_styles/normal = SubResource("StyleBoxTexture_bn08t")
+
+[node name="button_back" type="Sprite2D" parent="PromotionLayer/white_pieces/3"]
+z_index = -1
+position = Vector2(-50, -50)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("3_a87rf")
+centered = false
+
+[node name="4" type="Button" parent="PromotionLayer/white_pieces" groups=["white_pieces"]]
+layout_mode = 0
+offset_left = 1055.0
+offset_top = 50.0
+offset_right = 1455.0
+offset_bottom = 450.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_14o4d")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_n2vup")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_oyhd8")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_uccbo")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_sptv2")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_6i1vc")
+theme_override_styles/hover = SubResource("StyleBoxTexture_kuug8")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_j44ph")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_mi85p")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_5vw0x")
+theme_override_styles/normal = SubResource("StyleBoxTexture_85gpl")
+
+[node name="button_back" type="Sprite2D" parent="PromotionLayer/white_pieces/4"]
+z_index = -1
+position = Vector2(-50, -50)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("3_a87rf")
+centered = false
+
+[node name="5" type="Button" parent="PromotionLayer/white_pieces" groups=["white_pieces"]]
+layout_mode = 0
+offset_left = 1560.0
+offset_top = 50.0
+offset_right = 1960.0
+offset_bottom = 450.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_32e05")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_wt48f")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_2bsw7")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_7eq30")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_tqmja")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_hyri8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_12t8c")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_tkcfv")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_lh2rb")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_hpy1f")
+theme_override_styles/normal = SubResource("StyleBoxTexture_pbw2a")
+
+[node name="button_back" type="Sprite2D" parent="PromotionLayer/white_pieces/5"]
+z_index = -1
+position = Vector2(-50, -50)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("3_a87rf")
+centered = false
+
+[node name="black_pieces" type="Control" parent="PromotionLayer"]
+visible = false
+layout_mode = 3
+anchor_left = 0.868
+anchor_top = -1.543
+anchor_right = 0.868
+anchor_bottom = -1.543
+offset_left = -1000.0
+offset_top = -250.136
+offset_right = 1000.06
+offset_bottom = 250.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="2" type="Button" parent="PromotionLayer/black_pieces" groups=["black_pieces"]]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 50.0
+offset_right = 460.0
+offset_bottom = 450.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_flwri")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_shbkn")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_pyod4")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_3pp8s")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_u8u4w")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_u8u4w")
+theme_override_styles/hover = SubResource("StyleBoxTexture_is6w3")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_u8u4w")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_c0xe4")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_u8u4w")
+theme_override_styles/normal = SubResource("StyleBoxTexture_abbch")
+
+[node name="button_back" type="Sprite2D" parent="PromotionLayer/black_pieces/2"]
+z_index = -1
+position = Vector2(-60, -50)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("3_a87rf")
+centered = false
+
+[node name="3" type="Button" parent="PromotionLayer/black_pieces" groups=["black_pieces"]]
+layout_mode = 0
+offset_left = 560.0
+offset_top = 50.0
+offset_right = 960.0
+offset_bottom = 450.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_m60r1")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_dkem8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_88v5k")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_0sfxf")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_vindq")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_httvw")
+theme_override_styles/hover = SubResource("StyleBoxTexture_r4r4t")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_kuita")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_llks7")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_twbst")
+theme_override_styles/normal = SubResource("StyleBoxTexture_7jk56")
+
+[node name="button_back" type="Sprite2D" parent="PromotionLayer/black_pieces/3"]
+z_index = -1
+position = Vector2(-50, -50)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("3_a87rf")
+centered = false
+
+[node name="4" type="Button" parent="PromotionLayer/black_pieces" groups=["black_pieces"]]
+layout_mode = 0
+offset_left = 1055.0
+offset_top = 50.0
+offset_right = 1455.0
+offset_bottom = 450.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_4okpu")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_d843n")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_n235h")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_ulpdg")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_84s46")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_x6mm3")
+theme_override_styles/hover = SubResource("StyleBoxTexture_jc1v0")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_hxjs8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_gikfi")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_cf5im")
+theme_override_styles/normal = SubResource("StyleBoxTexture_uw6ck")
+
+[node name="button_back" type="Sprite2D" parent="PromotionLayer/black_pieces/4"]
+z_index = -1
+position = Vector2(-50, -50)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("3_a87rf")
+centered = false
+
+[node name="5" type="Button" parent="PromotionLayer/black_pieces" groups=["black_pieces"]]
+layout_mode = 0
+offset_left = 1545.0
+offset_top = 50.0
+offset_right = 1945.0
+offset_bottom = 450.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_c2181")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_6rhp1")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_hp2nu")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxTexture_o5vco")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_5e6n3")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxTexture_v4uqr")
+theme_override_styles/hover = SubResource("StyleBoxTexture_wr3pu")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxTexture_b5nla")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_r3kux")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxTexture_hlu30")
+theme_override_styles/normal = SubResource("StyleBoxTexture_p4daj")
+
+[node name="button_back" type="Sprite2D" parent="PromotionLayer/black_pieces/5"]
+z_index = -1
+position = Vector2(-50, -50)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("3_a87rf")
+centered = false
+
+[node name="EndLayer" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+
+[node name="Banner" type="Sprite2D" parent="EndLayer"]
+visible = false
+position = Vector2(1000, -1140)
+scale = Vector2(1.17687, 1.19165)
+texture = ExtResource("19_bm4nn")
+
+[node name="Checkmate" type="Sprite2D" parent="EndLayer"]
+visible = false
+position = Vector2(1000, -1200)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11_xl08j")
+
+[node name="Stalemate" type="Sprite2D" parent="EndLayer"]
+visible = false
+position = Vector2(1000, -1140)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("13_6rn2h")
+
+[node name="Draw" type="Sprite2D" parent="EndLayer"]
+visible = false
+position = Vector2(1000, -1140)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("14_mclvt")
+
+[node name="White Wins" type="Sprite2D" parent="EndLayer"]
+visible = false
+position = Vector2(1000, -1000)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("16_y8e3r")
+
+[node name="Black Wins" type="Sprite2D" parent="EndLayer"]
+visible = false
+position = Vector2(1000, -1000)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("15_6iai1")
+
+[node name="GoToMenuButton" type="Button" parent="EndLayer"]
+visible = false
+offset_left = 400.0
+offset_top = -750.0
+offset_right = 1600.0
+offset_bottom = -550.0
+theme_override_styles/focus = SubResource("StyleBoxEmpty_6de2u")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_wamfc")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_tmbjf")
+theme_override_styles/hover = SubResource("StyleBoxTexture_3uha3")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_24kya")
+theme_override_styles/normal = SubResource("StyleBoxTexture_24kya")
+
+[node name="CheckLayer" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
+
+[node name="check" type="Sprite2D" parent="CheckLayer"]
+visible = false
+position = Vector2(1000, -1000)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("20_ywtmw")
+
+[connection signal="pressed" from="EndLayer/GoToMenuButton" to="." method="_on_go_to_menu_button_pressed"]

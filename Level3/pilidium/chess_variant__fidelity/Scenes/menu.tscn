@@ -1,0 +1,92 @@
+[gd_scene load_steps=18 format=3 uid="uid://di4scv3jic62g"]
+
+[ext_resource type="Texture2D" uid="uid://tkfdyoy0a4hd" path="res://Assets/menu_back_back.jpg" id="1_1o5b3"]
+[ext_resource type="Script" path="res://Scenes/menu.gd" id="1_kn42g"]
+[ext_resource type="Texture2D" uid="uid://dcl827j5vme5j" path="res://Assets/menu_back.png" id="1_l5mhn"]
+[ext_resource type="Texture2D" uid="uid://dgn5uoklcuv3w" path="res://Assets/chess_name.png" id="3_abqkm"]
+[ext_resource type="Texture2D" uid="uid://dkisjawc2opu8" path="res://Assets/play_button.png" id="3_cojvo"]
+[ext_resource type="Texture2D" uid="uid://cl8frbo232c1n" path="res://Assets/play_button_green.png" id="3_g2fgv"]
+[ext_resource type="Texture2D" uid="uid://cexojxyxi52ae" path="res://Assets/quit_button_red.png" id="3_w5g8q"]
+[ext_resource type="Texture2D" uid="uid://ckp5rn81b5nel" path="res://Assets/quit_button.png" id="6_l4bbl"]
+[ext_resource type="Texture2D" uid="uid://ofcqvtny8fyn" path="res://Assets/variant_fidelity.png" id="9_131sc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0cbq4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mecwx"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_k28o8"]
+texture = ExtResource("3_w5g8q")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_yl5jx"]
+texture = ExtResource("3_g2fgv")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l42yg"]
+texture = ExtResource("3_cojvo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_byq4u"]
+texture = ExtResource("3_cojvo")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_g2de0"]
+texture = ExtResource("6_l4bbl")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_lvhvi"]
+texture = ExtResource("6_l4bbl")
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kn42g")
+
+[node name="MenuBackBack" type="Sprite2D" parent="."]
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("1_1o5b3")
+
+[node name="MenuBack" type="Sprite2D" parent="."]
+texture = ExtResource("1_l5mhn")
+
+[node name="PlayButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = -75.0
+offset_top = 60.0
+offset_right = -45.0
+offset_bottom = 70.0
+scale = Vector2(5, 5)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0cbq4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mecwx")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_k28o8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_yl5jx")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_l42yg")
+theme_override_styles/normal = SubResource("StyleBoxTexture_byq4u")
+
+[node name="QuitButton" type="Button" parent="."]
+layout_mode = 2
+offset_left = -75.0
+offset_top = 130.0
+offset_right = -45.0
+offset_bottom = 140.0
+scale = Vector2(5, 5)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_0cbq4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_mecwx")
+theme_override_styles/hover_pressed = SubResource("StyleBoxTexture_k28o8")
+theme_override_styles/hover = SubResource("StyleBoxTexture_k28o8")
+theme_override_styles/pressed = SubResource("StyleBoxTexture_g2de0")
+theme_override_styles/normal = SubResource("StyleBoxTexture_lvhvi")
+
+[node name="ChessName" type="Sprite2D" parent="."]
+position = Vector2(0, -90)
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("3_abqkm")
+
+[node name="VariantFidelity" type="Sprite2D" parent="."]
+position = Vector2(0, -15)
+scale = Vector2(0.08, 0.08)
+texture = ExtResource("9_131sc")
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]
